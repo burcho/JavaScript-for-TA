@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS for TA</title>
+</head>
+<body>
+   <!-- task 1 -->
+    <h1 onclick="alert('Olha Burchak')">Click here to get the name of student</h1> 
+
+    <!-- tasks 2 -->
+    <script src="app.js"></script>
+
+    <!-- task 3 -->
+    <p>
+  Hello, here you can see variable_1 - "<span id="FirstVariable"></span>"
+  and here is variable_2 - "<span id="SecondVariable"></span>".
+    </p>
+    <script>
+        let FirstVariable = "Value One";
+        document.getElementById("FirstVariable").innerHTML = FirstVariable;
+        let SecondVariable = "25";
+        document.getElementById("SecondVariable").innerHTML = SecondVariable;
+    </script>
+
+<p>
+    Here you can see variable_1 with changed value - "<span id="ThirdVariable"></span>"
+    and variable_2 is - "<span id="FourthVariable"></span>".
+      </p>
+      <script>
+          let ThirdVariable = "Value One";
+          let FourthVariable = "25";
+          ThirdVariable = FourthVariable;
+          document.getElementById("ThirdVariable").innerHTML = ThirdVariable;
+          document.getElementById("FourthVariable").innerHTML = FourthVariable;
+         
+      </script>
+
+
+   <!-- task 7 -->
+    <p>Dear <span id="userLogin"></span>, your email is <span id="userEmail"></span>,
+         your password is <span id="userPassword"></span>.</p>
+   <script>
+let userLogin = prompt('Please enter your login');
+document.getElementById("userLogin").innerHTML = userLogin;
+let userEmail = prompt('Please enter your email');
+document.getElementById("userEmail").innerHTML = userEmail;
+let userPassword = prompt('Please enter your password');
+document.getElementById("userPassword").innerHTML = userPassword;
+   </script> 
+
+   <!-- task 8 -->
+   <p> Task#8
+    <br> How many seconds in one hour - <span id="hour"></span>;
+    <br> How many seconds in one day - <span id="day"></span>;
+    <br> How many seconds in one month (30 days) - <span id="month"></span>.
+   </p>
+   <script>
+    const second = 1;
+    let hour = (second * 60 * 60);
+    document.getElementById("hour").innerHTML = hour;
+    let day = (hour * 24);
+    document.getElementById("day").innerHTML = day;
+    let month = (day * 30);
+    document.getElementById("month").innerHTML = month;
+
+   </script>
+
+   
+</body>
+</html>
